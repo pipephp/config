@@ -6,7 +6,7 @@ class Config
 {
     public static $db = [];
 
-    public static function set(string $path, $value):void
+    public static function set(string $path, $value): void
     {
         $nodes = explode(".", $path);
 
@@ -19,7 +19,7 @@ class Config
         }
     }
 
-    public static function get(string $path):mixed
+    public static function get(string $path): mixed
     {
         $nodes = explode(".", $path);
         return count($nodes) == 1
